@@ -1,0 +1,48 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .search-container{
+        @apply
+           w-11 h-3 bg-black
+    }
+    .course{
+        @apply
+        bg-gray-300/10 text-gray-700 
+        shadow-md rounded-lg overflow-hidden
+        relative
+        p-3 
+        cursor-pointer h-72
+    }
+    .badge{
+        @apply
+        px-3 py-1 rounded-full
+        bg-black/5 text-black cursor-pointer
+         whitespace-nowrap overflow-ellipsis overflow-hidden
+    }
+    .product-title{
+        @apply
+        font-semibold 
+        overflow-ellipsis overflow-hidden
+        whitespace-nowrap 
+        mb-6
+        mt-4
+    }
+    
+    .icon-left{
+        @apply
+        absolute right-4 top-4 p-1 bg-black/40  
+        text-white
+        rounded-full
+        cursor-pointer
+    }
+    .btn-primary{
+        @apply
+        flex justify-between
+        items-center
+    }
+    
+}
